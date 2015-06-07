@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "networkErrorRebootTime": 5,
+  "host": "dev.nqminds.com",
+  "port": 80,
+  "localPort": 80,
+  "user": "ubiapps",
+  "pass": "sppaibu",
+  "transmitCheckFrequency": 0.1,
+  "transmitErrorFrequency": 1,
+  "remoteBranch": "master",
+  "pendingPacketThreshold": 1,
+  "maximumTransmitKB": 250,
+  "fileMoveThreshold": 250,
+  "registrationFrequency": 15,
+  "feedDescriptor": "SIGFOX-GFTDesignEnviroMon01-850C"
+}

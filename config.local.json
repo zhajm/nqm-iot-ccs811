@@ -1,0 +1,62 @@
+{
+  "syncConfig": {
+    "syncType": "nqmHTTPSync",
+    "syncServer": "localhost",
+    "syncPort": 3102,
+    "path": "feedData",
+    "ssl": false,
+    "autoReconnectTimer": 5000,
+    "hubId": "abcd"
+  },
+  "cacheConfig": {
+    "rootPath": "cache",
+    "transmitCheckFrequency": 10000,
+    "maximumTransmitKB": 250,
+    "transportTimeout": 600000,
+    "archive": true,
+    "pendingPacketThreshold": 1
+  },
+  "drivers": [
+    {
+      "id": "c/t/h",
+      "type": "COZIR",
+      "port": "/dev/ttyAMA0",
+      "cozirPollInterval": 1
+    },
+    {
+      "type": "OEM",
+      "port": "/dev/ttyUSB0",
+      "sensors": [
+        { "id": "power", "type": "EMON-Tx", "nodeId": 10 },
+        { "id": "t/h", "type": "EMON-TH", "nodeId": 19 }
+      ]
+    },
+    {
+      "type": "FS20",
+      "port": "/dev/ttyACM0",
+      "sensors": [
+        {
+          "id": "t3333",
+          "name": "office",
+          "feedId": "office-heating"
+        },
+        {
+          "id": "fe3d5",
+          "name": "pir",
+          "feedId": "toby1"
+        },
+        {
+          "id": "k01",
+          "name": "outside temp",
+          "feedId": "outside-temp"
+        }
+      ]
+    },
+    {
+      "type": "SIGFOX",
+      "localPort": 3101,
+      "maxRequestLength": 1024,
+      "feedId": "SIGFOX-GFTDesignEnviroMon01-850C"
+    }
+  ]
+}

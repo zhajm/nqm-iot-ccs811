@@ -1,0 +1,14 @@
+{
+  "name": "nqmIOTHub",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "toby.ealden@gmail.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "scribe-js": "~2.0.4"
+  }
+}
