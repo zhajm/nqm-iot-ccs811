@@ -26,6 +26,7 @@
     {
       "type": "OEM",
       "port": "/dev/ttyUSB0",
+      "oemNetwork": 210,
       "sensors": [
         { "id": "power", "feedId": "", "type": "EMON-Tx", "nodeId": 10, "log": { "power": true } },
         { "id": "t/h", "feedId": "", "type": "EMON-TH", "nodeId": 19, "log": { "temperature": true, "humidity": true } }
