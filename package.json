@@ -9,6 +9,8 @@
   "author": "toby.ealden@gmail.com",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "scribe-js": "~2.0.4"
+    "scribe-js": "~2.0.4",
+    "nqmFileCache": "git://github.com/nqminds/nqmFileCache.git",
+    "nqmHTTPSync": "git://github.com/nqminds/nqmHTTPSync.git"
   }
 }
