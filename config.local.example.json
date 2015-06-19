@@ -1,12 +1,12 @@
 {
   "syncConfig": {
     "syncType": "nqmHTTPSync",
-    "syncServer": "localhost",
-    "syncPort": 3102,
+    "syncServer": "<insert sync server host>",
+    "hubId": "<insert hub Id>",
+    "syncPort": 80,
     "path": "feedData",
     "ssl": false,
-    "autoReconnectTimer": 5000,
-    "hubId": "abcd"
+    "autoReconnectTimer": 5000
   },
   "cacheConfig": {
     "rootPath": "cache",
@@ -20,16 +20,17 @@
     {
       "id": "c/t/h",
       "type": "COZIR",
-      "port": "/dev/ttyAMA0",
-      "cozirPollInterval": 1
+      "port": "/dev/ttyUSB0",
+      "cozirPollInterval": 1,
+      "feedId": "<insert feed id>"
     },
     {
       "type": "OEM",
-      "port": "/dev/ttyUSB0",
+      "port": "/dev/ttyAMA0",
       "oemNetwork": 210,
       "sensors": [
-        { "id": "power", "feedId": "", "type": "EMON-Tx", "nodeId": 10, "log": { "power": true } },
-        { "id": "t/h", "feedId": "", "type": "EMON-TH", "nodeId": 19, "log": { "temperature": true, "humidity": true } }
+        { "id": "power", "feedId": "<insert feed id>", "type": "emonTx", "nodeId": 10, "log": { "power": true } },
+        { "id": "t/h", "feedId": "<insert feed id>", "type": "emonTH", "nodeId": 19, "log": { "temperature": true, "humidity": true } }
       ]
     },
     {
@@ -39,17 +40,17 @@
         {
           "id": "t3333",
           "name": "office",
-          "feedId": "office-heating"
+          "feedId": "<insert feed id>"
         },
         {
           "id": "fe3d5",
           "name": "pir",
-          "feedId": "toby1"
+          "feedId": "<insert feed id>"
         },
         {
           "id": "k01",
           "name": "outside temp",
-          "feedId": "outside-temp"
+          "feedId": "<insert feed id>"
         }
       ]
     },
@@ -57,7 +58,7 @@
       "type": "SIGFOX",
       "localPort": 3101,
       "maxRequestLength": 1024,
-      "feedId": "SIGFOX-GFTDesignEnviroMon01-850C"
+      "feedId": "<insert feed id>"
     }
   ]
 }
