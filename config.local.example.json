@@ -4,7 +4,7 @@
     "syncServer": "<insert sync server host>",
     "hubId": "<insert hub Id>",
     "syncPort": 80,
-    "path": "feedData",
+    "path": "command/iot/feed/data",
     "ssl": false,
     "autoReconnectTimer": 5000
   },
