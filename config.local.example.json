@@ -4,9 +4,11 @@
     "syncServer": "<insert sync server host>",
     "hubId": "<insert hub Id>",
     "syncPort": 80,
-    "path": "command/iot/feed/data",
+    "path": "commandSync/dataset/data/feed",
     "ssl": false,
-    "autoReconnectTimer": 5000
+    "autoReconnectTimer": 5000,
+    "capability": "<insert capability token id>",
+    "secret": "<insert capability token secret>"
   },
   "cacheConfig": {
     "rootPath": "cache",

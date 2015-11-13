@@ -1,4 +1,4 @@
-# nqmIOTHub
+# nqm-iot-hub
 Component to proxy sensor data to nqmHub
 
 ## installation - Raspberry Pi
@@ -14,8 +14,8 @@ node-v0.10.28-linux-arm-pi/bin/node --version
 Then install the nqminds IOT Hub:
 
 ```
-git clone https://github.com/nqminds/nqmIOTHub
-cd nqmIOTHub
+git clone https://github.com/nqminds/nqm-iot-hub
+cd nqm-iot-hub
 npm install
 ```
 
