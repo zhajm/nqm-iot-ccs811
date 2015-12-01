@@ -1,6 +1,6 @@
 {
   "syncConfig": {
-    "syncType": "nqmHTTPSync",
+    "syncType": "nqm-iot-http-sync",
     "syncServer": "<insert sync server host>",
     "hubId": "<insert hub Id>",
     "syncPort": 80,
