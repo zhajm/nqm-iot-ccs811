@@ -29,3 +29,4 @@ node_modules
 *.iml
 /config.local.json
 /cache/
+/config.local.home.json
