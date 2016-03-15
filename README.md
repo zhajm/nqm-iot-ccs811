@@ -73,3 +73,8 @@ Now start the hub using:
 ```
 node index
 ```
+
+To get diagnostic information you can enable the output using:
+```
+DEBUG=* node index
+```
