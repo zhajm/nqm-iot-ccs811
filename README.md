@@ -21,8 +21,7 @@ npm install
 
 ## configuration
 
-You will need a hub Id and a feed Id token for each data stream you intend to publish. You create these in your
-NQM Hub (or ask Toby).
+You will need a feed Id for each data stream you intend to publish, and a security token with permissions to write to each feed. You create these using the nqToobox (or ask Toby).
 
 Copy the config.local.example.json to config.local.json, and then edit the file.
 
@@ -36,9 +35,8 @@ Change the sync config section to reflect the destination Hub:
  ```
  {
    "syncConfig": {
-     "syncType": "nqmHTTPSync",
-     "syncServer": "<insert sync server host>",
-     "hubId": "<insert hub Id>",
+     "syncType": "nqm-iot-http-sync",
+     "syncServer": "<insert sync server host>",     
      ...
 ```
 
@@ -66,7 +64,7 @@ You need to install a driver for each of your devices. Drivers are available at 
 For example, if you are using a COZIR CO2 sensor, install the COZIR driver:
 
 ```
-npm install git://github.com/nqminds/nqmCOZIRDriver
+npm install git://github.com/nqminds/nqm-iot-cozir-driver
 ```
 
 ## running
