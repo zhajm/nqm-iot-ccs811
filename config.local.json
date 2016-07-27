@@ -1,0 +1,29 @@
+{
+  "syncConfig": {
+    "syncType": "nqm-iot-http-sync",
+    "syncServer": "cmd.nqminds.com",
+    "syncPort": 443,
+    "path": "commandSync/dataset/data/feed",
+    "ssl": false,
+    "autoReconnectTimer": 5000,
+    "capability": "B1gZIIBKH",
+    "secret": "co2data"
+  },
+  "cacheConfig": {
+    "rootPath": "cache",
+    "transmitCheckFrequency": 10000,
+    "maximumTransmitKB": 250,
+    "transportTimeout": 600000,
+    "archive": true,
+    "pendingPacketThreshold": 1
+  },
+  "drivers": [
+    {
+      "id": "c/t/h",
+      "type": "COZIR",
+      "port": "/dev/ttyUSB0",
+      "cozirPollInterval": 1,
+      "feedId": "ryldLSSFH"
+    }
+  ]
+}

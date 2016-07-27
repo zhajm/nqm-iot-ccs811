@@ -1,0 +1,10 @@
+/*
+ * This is a sample configuration object for httpSync - actual config is passed to the constructor.
+ */
+
+{
+  "syncServer": "localhost",
+  "syncPort": 3000,
+  "ssl": false,
+  "path": "/feedData"
+}
