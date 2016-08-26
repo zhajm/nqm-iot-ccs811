@@ -1,0 +1,9 @@
+#ifndef FIRMWARE_H
+#define FIRMWARE_H
+
+#include <avr/pgmspace.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
